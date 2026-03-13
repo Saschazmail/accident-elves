@@ -120,8 +120,33 @@ export default function AccidentElves() {
         <div style={{ position: "absolute", bottom: "15%", right: "5%", width: 320, height: 320, background: "radial-gradient(circle,rgba(90,184,232,0.08) 0%,transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
 
         {/* Main logo */}
-        <div style={{ width: "100%", maxWidth: 580, marginBottom: 8 }}>
-          <img src="/logo-dark.jpg" alt="Accident Elves" style={{ width: "100%", maxWidth: 580, display: "block", margin: "0 auto" }} />
+        <div style={{ position: "relative", width: "100%", maxWidth: 580, marginBottom: 8 }}>
+          <img src="/logo-dark.jpg" alt="Accident Elves" style={{ width: "100%", maxWidth: 580, display: "block", margin: "0 auto", maskImage: "radial-gradient(ellipse 75% 80% at 50% 42%, black 35%, rgba(0,0,0,0.8) 55%, transparent 100%)", WebkitMaskImage: "radial-gradient(ellipse 75% 80% at 50% 42%, black 35%, rgba(0,0,0,0.8) 55%, transparent 100%)" }} />
+          {/* Sparkle overlay */}
+          <svg viewBox="0 0 580 230" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", overflow: "visible" }}>
+            <defs>
+              <filter id="spkGlow" x="-60%" y="-60%" width="220%" height="220%">
+                <feGaussianBlur stdDeviation="1.2" result="b" />
+                <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+              </filter>
+              <style>{`
+                @keyframes spk1 { 0%,100%{opacity:1;transform:scale(1) rotate(0deg)} 50%{opacity:0.3;transform:scale(0.55) rotate(22deg)} }
+                @keyframes spk2 { 0%,100%{opacity:0.7;transform:scale(0.8) rotate(0deg)} 50%{opacity:1;transform:scale(1.2) rotate(-18deg)} }
+                @keyframes spk3 { 0%,100%{opacity:0.4;transform:scale(1.1) rotate(0deg)} 50%{opacity:0.9;transform:scale(0.6) rotate(30deg)} }
+                @keyframes spk4 { 0%,100%{opacity:0.9;transform:scale(0.7) rotate(0deg)} 50%{opacity:0.2;transform:scale(1.15) rotate(-25deg)} }
+              `}</style>
+            </defs>
+            {/* Gold stars */}
+            <polygon points="290,22 292.5,29 300,29 294,33.5 296.5,41 290,36.5 283.5,41 286,33.5 280,29 287.5,29" fill="#FFD700" filter="url(#spkGlow)" style={{ transformOrigin: "290px 31px", animation: "spk1 1.8s ease-in-out infinite" }} />
+            <polygon points="265,36 266.8,41.5 272.5,41.5 268,44.8 269.8,50.5 265,47 260.2,50.5 262,44.8 257.5,41.5 263.2,41.5" fill="#FFD700" filter="url(#spkGlow)" style={{ transformOrigin: "265px 43px", animation: "spk2 2.3s ease-in-out 0.4s infinite" }} />
+            <polygon points="315,36 316.8,41.5 322.5,41.5 318,44.8 319.8,50.5 315,47 310.2,50.5 312,44.8 307.5,41.5 313.2,41.5" fill="#FFD700" filter="url(#spkGlow)" style={{ transformOrigin: "315px 43px", animation: "spk3 2.1s ease-in-out 0.9s infinite" }} />
+            <polygon points="278,14 279.4,18.3 284,18.3 280.3,21 281.7,25.3 278,22.5 274.3,25.3 275.7,21 272,18.3 276.6,18.3" fill="#FFF5B0" filter="url(#spkGlow)" style={{ transformOrigin: "278px 19px", animation: "spk4 1.6s ease-in-out 0.2s infinite" }} />
+            <polygon points="302,14 303.4,18.3 308,18.3 304.3,21 305.7,25.3 302,22.5 298.3,25.3 299.7,21 296,18.3 300.6,18.3" fill="#FFF5B0" filter="url(#spkGlow)" style={{ transformOrigin: "302px 19px", animation: "spk1 2.5s ease-in-out 1.1s infinite" }} />
+            {/* Blue-white stars */}
+            <polygon points="250,26 251.5,30.5 256.5,30.5 252.5,33.3 254,38 250,35 246,38 247.5,33.3 243.5,30.5 248.5,30.5" fill="#AEF0FF" filter="url(#spkGlow)" style={{ transformOrigin: "250px 32px", animation: "spk2 1.9s ease-in-out 0.6s infinite" }} />
+            <polygon points="330,26 331.5,30.5 336.5,30.5 332.5,33.3 334,38 330,35 326,38 327.5,33.3 323.5,30.5 328.5,30.5" fill="#AEF0FF" filter="url(#spkGlow)" style={{ transformOrigin: "330px 32px", animation: "spk3 2.2s ease-in-out 1.3s infinite" }} />
+            <polygon points="290,6 291,9 294,9 291.5,10.8 292.5,14 290,12.2 287.5,14 288.5,10.8 286,9 289,9" fill="#AEF0FF" filter="url(#spkGlow)" style={{ transformOrigin: "290px 10px", animation: "spk4 1.7s ease-in-out 0.8s infinite" }} />
+          </svg>
         </div>
 
         <div style={{ display: "inline-block", background: "rgba(255,215,0,0.1)", border: "1px solid rgba(255,215,0,0.25)", borderRadius: 40, padding: "7px 20px", marginBottom: 28, fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", color: "#FFD700", fontWeight: 700 }}>
