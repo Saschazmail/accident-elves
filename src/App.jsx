@@ -114,14 +114,14 @@ export default function AccidentElves() {
       </nav>
 
       {/* HERO */}
-      <div style={{ minHeight: "100vh", background: "linear-gradient(160deg,#071210 0%,#0f2418 45%,#091824 100%)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "130px 24px 90px", position: "relative", overflow: "hidden" }}>
+      <div style={{ minHeight: "100vh", background: "linear-gradient(160deg, #071208 0%, #0a1a0c 45%, #071208 100%)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "130px 24px 90px", position: "relative", overflow: "hidden" }}>
         {/* Orbs */}
         <div style={{ position: "absolute", top: "10%", left: "5%", width: 400, height: 400, background: "radial-gradient(circle,rgba(255,215,0,0.07) 0%,transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: "15%", right: "5%", width: 320, height: 320, background: "radial-gradient(circle,rgba(90,184,232,0.08) 0%,transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
 
         {/* Main logo */}
         <div style={{ position: "relative", width: "100%", maxWidth: 580, marginBottom: 8 }}>
-          <img src="/logo-dark.jpg" alt="Accident Elves" style={{ width: "100%", maxWidth: 580, display: "block", margin: "0 auto", maskImage: "radial-gradient(ellipse 85% 88% at 50% 42%, black 45%, rgba(0,0,0,0.7) 65%, transparent 90%)", WebkitMaskImage: "radial-gradient(ellipse 85% 88% at 50% 42%, black 45%, rgba(0,0,0,0.7) 65%, transparent 90%)" }} />
+          <img src="/logo-dark.jpg" alt="Accident Elves" style={{ width: "100%", maxWidth: 580, display: "block", margin: "0 auto" }} />
           {/* Sparkle overlay */}
           <svg viewBox="0 0 580 230" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", overflow: "visible" }}>
             <defs>
