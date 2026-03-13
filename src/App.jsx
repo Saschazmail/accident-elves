@@ -121,7 +121,8 @@ export default function AccidentElves() {
 
         {/* Main logo */}
         <div style={{ position: "relative", width: "100%", maxWidth: 580, marginBottom: 8 }}>
-          <img src="/logo-dark.jpg" alt="Accident Elves" style={{ width: "100%", maxWidth: 580, display: "block", margin: "0 auto", maskImage: "radial-gradient(ellipse 85% 88% at 50% 42%, black 45%, rgba(0,0,0,0.7) 65%, transparent 90%)", WebkitMaskImage: "radial-gradient(ellipse 85% 88% at 50% 42%, black 45%, rgba(0,0,0,0.7) 65%, transparent 90%)" }} />
+          <div style={{ position: "absolute", inset: "-20%", background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(15,50,20,0.95) 0%, rgba(7,18,8,0.98) 50%, transparent 100%)", borderRadius: "50%", zIndex: 0, pointerEvents: "none" }} />
+          <img src="/logo-dark.jpg" alt="Accident Elves" style={{ position: "relative", zIndex: 1, width: "100%", maxWidth: 580, display: "block", margin: "0 auto", maskImage: "radial-gradient(ellipse 85% 88% at 50% 42%, black 45%, rgba(0,0,0,0.7) 65%, transparent 90%)", WebkitMaskImage: "radial-gradient(ellipse 85% 88% at 50% 42%, black 45%, rgba(0,0,0,0.7) 65%, transparent 90%)" }} />
           {/* Sparkle overlay */}
           <svg viewBox="0 0 580 230" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", overflow: "visible" }}>
             <defs>
