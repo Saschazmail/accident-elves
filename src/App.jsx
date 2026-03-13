@@ -121,7 +121,7 @@ export default function AccidentElves() {
 
         {/* Main logo */}
         <div style={{ width: "100%", maxWidth: 580, marginBottom: 8 }}>
-          <img src="/logo-characters.jpg" alt="Accident Elves" style={{ width: "100%", maxWidth: 580, display: "block", margin: "0 auto" }} />
+          <img src="/logo-dark.jpg" alt="Accident Elves" style={{ width: "100%", maxWidth: 580, display: "block", margin: "0 auto" }} />
         </div>
 
         <div style={{ display: "inline-block", background: "rgba(255,215,0,0.1)", border: "1px solid rgba(255,215,0,0.25)", borderRadius: 40, padding: "7px 20px", marginBottom: 28, fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", color: "#FFD700", fontWeight: 700 }}>
